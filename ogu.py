@@ -30,5 +30,5 @@ data = {
 }
 
 while True:
-	x = requests.post('https://ogusers.com/newreply.php', cookies=cookies, data=data).text
+	post('https://ogusers.com/newreply.php', cookies=cookies, data=data)
 	sleep(3600)
