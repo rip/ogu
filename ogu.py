@@ -5,7 +5,7 @@ version although this is functional...
 just a req l00p'''
 
 from time import sleep
-from request import post
+from requests import post
 
 thread_ID_2bump = ''
 
