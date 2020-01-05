@@ -1,14 +1,19 @@
-''' OGU AUTOBUMPER PROTOTYPE V.0
+''' OGU AUTOBUMPER PROTOTYPE version 0.1 
 may code a fully featured and cross-platform
 (run on any device or in the cloud!)
 version although this is functional...
 just a req l00p'''
 
-thread_ID_2bump = 'Edit This' # thread id
+thread_ID_2bump = 'EDITxTHISxWITHxYOURS' # thread id
 
-mybbuser = 'Edit This' # auth cookie
+mybbuser = 'EDITxTHISxWITHxYOURS' # auth cookie
 
-my_post_key = 'Edit This' # found in request // todo: pull from cookie above but this is just an example
+my_post_key = 'EDITxTHISxWITHxYOURS' # found in source html or request
+'''
+todo: automatically obtain
+(along with other input variables other than
+thread url to bump, in non-prototype version)
+'''
 
 data = {
 'my_post_key': my_post_key,
@@ -26,7 +31,11 @@ data = {
 
 from requests import post
 from time import sleep
+from datetime import datetime as clock
 
 while True:
 	post('https://ogusers.com/newreply.php', cookies={'mybbuser': mybbuser}, data=data)
-	sleep(3600) # bump every x seconds (default: 3600)
+	time = clock.now().strftime('%I:%M%p')
+	print(f'({time}) bumped https://ogusers.com/showthread.php?tid={thread_ID_2bump}')
+	sleep(3600)
+	# bumps every 3600 seconds
