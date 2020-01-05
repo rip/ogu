@@ -40,7 +40,5 @@ while True:
 	if 'IM_UNDER_ATTACK_BOX' in bump.text:
 		print('^ bump failed!')
 		print('^^ captcha detected, evasion unsupported in prototype.')
-	else:
-		print('^ successfully bumped!')
-	sleep(3600)
-	# bumps every 3600 seconds
+	else: print('^ successfully bumped!')
+	sleep(3600) # bumps every 3600 seconds
