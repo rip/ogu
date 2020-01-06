@@ -1,9 +1,9 @@
 
-make sure you have python3 installed (along with the requests module)
+make sure you have python3 installed (along with the default requests module)
 
 copy or download ogu.py
 
-plug in variables (photo tutorial below using inspect element)
+edit variables in ogu.py (photo tutorial below using inspect element)
 
 save it and run `python3 ogu.py`
 
