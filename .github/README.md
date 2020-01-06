@@ -1,7 +1,7 @@
 
 make sure you have python3 installed (along with the default requests module)
 
-copy or download ogu.py
+copy and paste or download ogu.py
 
 edit variables in ogu.py (photo tutorial below using inspect element)
 
