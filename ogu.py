@@ -1,7 +1,7 @@
 ''' OGU AUTOBUMPER PROTOTYPE version 0.1 
 may code a fully featured and cross-platform
 (run on any device or in the cloud!)
-version although this is functional...
+version, although this is functional...
 just a req l00p'''
 
 thread_ID_2bump = 'EDITxTHISxWITHxYOURS' # thread id to bump
@@ -9,9 +9,9 @@ thread_ID_2bump = 'EDITxTHISxWITHxYOURS' # thread id to bump
 mybbuser = 'EDITxTHISxWITHxYOURS' # your auth cookie
 
 my_post_key = 'EDITxTHISxWITHxYOURS' # found in source html or request
-'''
-todo: automatically obtain
-(along with other input variables other than
+
+'''todo: automatically obtain ^
+(along with other input variables, other than
 thread url to bump, in non-prototype version)
 '''
 
